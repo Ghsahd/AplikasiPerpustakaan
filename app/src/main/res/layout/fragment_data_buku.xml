@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:id="@+id/swipeRefreshLayoutDataBuku"
+    android:background="@color/white"
+    tools:context=".MenuFragment.DataBukuFragment">
+    <FrameLayout
+        android:id="@+id/fragmentContainerDataBuku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp">
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:divider="@drawable/garis"
+            android:showDividers="beginning|middle|end"
+            android:dividerPadding="8dp">
+
+            <TableRow
+                android:id="@+id/tableRow_title_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:id="@+id/textViewTitleLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Dinas Perpustakaan Provinsi Kalimantan Selatan"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginTop="8dp"/>
+            <TextView
+                android:id="@+id/textViewDataAnggota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Laporan Data Buku"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_marginTop="8dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp">
+
+                <ImageButton
+                    android:id="@+id/exportButton"
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"
+                    android:src="@drawable/export"
+                    android:background="@null"
+                    android:layout_gravity="top|start"
+                    android:contentDescription="Export Data"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:text="Export"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="top|start"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:divider="@drawable/garis"
+                android:showDividers="beginning|middle|end"
+                android:dividerPadding="8dp">
+
+                    <TableRow
+                        android:id="@+id/tableRow_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/nomor"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kodebuku"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/pengarang"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/judulbuku"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/penerbit"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tahunterbit"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/kategori"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/jumlah"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/loaksiterbit"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/lokasibuku"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:typeface="serif" />
+                    </TableRow>
+                </TableLayout>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

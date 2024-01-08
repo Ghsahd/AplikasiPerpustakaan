@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/peminjaman"
+        android:icon="@drawable/peminjaman_24"
+        android:title="Pemijaman" />
+    <item
+        android:id="@+id/peminjamanOnline"
+        android:icon="@drawable/peminjaman_24"
+        android:title="Pemijaman Online" />
+    <item
+        android:id="@+id/tambah"
+        android:icon="@drawable/tambah_24"
+        android:title="Buku" />
+    <item
+        android:id="@+id/tambahBukuDigital"
+        android:icon="@drawable/tambah_24"
+        android:title="Buku Digital" />
+    <item
+        android:id="@+id/tambahBukuRusak"
+        android:icon="@drawable/tambah_24"
+        android:title="Buku Rusak" />
+    <item
+        android:id="@+id/data_menu"
+        android:title="Data">
+        <menu>
+            <item
+                android:id="@+id/spinner_menu_item"
+                app:actionViewClass="android.widget.Spinner"
+                app:showAsAction="always|collapseActionView"
+                android:title=""
+                android:icon="@drawable/folder_24"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment.TambahBukuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="67dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:id="@+id/editTextKodeBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode Buku"
+                android:maxLength="6"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextJudulBuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Buku"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextPengarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pengarang"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextPenerbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Penerbit"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextTahunTerbit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tahun Terbit"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:imeOptions="actionDone"/>
+            <EditText
+                android:id="@+id/editTextKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kategori"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextJumlah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextLinkSampul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Link Sampul"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <EditText
+                android:id="@+id/editTextLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Link Pdf"
+                android:minHeight="48dp"
+                android:minWidth="48dp"/>
+            <Button
+                android:id="@+id/buttonTambahBuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
